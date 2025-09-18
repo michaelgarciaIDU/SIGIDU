@@ -9,6 +9,7 @@ define([
     postCreate: function() {
       this.inherited(arguments);
       console.log('Chatbot widget cargado ✅');
+      console.log(this.map)
     },
 
     startup: function() {
@@ -61,8 +62,8 @@ define([
       }
 
       // 🔹 Listar capas disponibles
-      let capasDisponibles = window.map.layerIds.map(id => {
-        let lyr = window.map.getLayer(id);
+      let capasDisponibles = this.map.layerIds.map(id => {
+        let lyr = this.map.getLayer(id);
         return {
           id: lyr.id,
           title: lyr.name || lyr.id,
