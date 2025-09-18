@@ -1,0 +1,34 @@
+﻿{
+  "splash": {
+    "splashContent": "",
+    "requireConfirm": false,
+    "confirm": {
+      "text": "Acepto los términos y las condiciones anteriores",
+      "color": "#ffffff",
+      "transparency": 0
+    },
+    "showOption": true,
+    "confirmEverytime": true,
+    "contentVertical": "top",
+    "size": {
+      "mode": "wh",
+      "wh": {
+        "w": 750,
+        "h": 570
+      }
+    },
+    "background": {
+      "mode": "color",
+      "image": null,
+      "type": "fill",
+      "fileName": "No%20se%20ha%20seleccionado%20ning%C3%BAn%20archivo",
+      "color": "#859226",
+      "transparency": 0.4
+    },
+    "button": {
+      "color": "#4c531f",
+      "transparency": 0,
+      "text": "Cerrar"
+    }
+  }
+}

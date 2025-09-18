@@ -1,0 +1,45 @@
+#chatbot-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;   /* ocupa todo el panel del widget */
+  gap: 10px;
+}
+
+.chatbot-messages {
+  flex: 1;             /* ocupa todo el espacio libre */
+  padding: 8px;
+  overflow-y: auto;    /* scroll si hay muchos mensajes */
+  font-size: 14px;
+   background: #f9f9f9;
+   padding-bottom: 20px;
+}
+
+#chatbot-input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+
+}
+
+.chatbot-input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.chatbot-send {
+  background: #4c531f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.chatbot-clear {
+  background: #000000;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

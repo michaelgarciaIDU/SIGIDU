@@ -1,0 +1,17 @@
+{
+  "legend": {
+    "arrangement": 0,
+    "autoUpdate": true,
+    "respectCurrentMapScale": true
+  },
+  "layerState": {
+    "InventarioInfraestructuraPuente_1767": {
+      "selected": true
+    },
+    "InventarioEspacioPublico_9563": {
+      "selected": false
+    }
+  },
+  "syncWithWebmap": false,
+  "showLegendForBasemap": false
+}

@@ -1,0 +1,13 @@
+{
+  "geometryService": "https://webidu.idu.gov.co/servergis1/rest/services/Utilities/Geometry/GeometryServer",
+  "layers": [
+    {
+      "name": "Alameda",
+      "id": 4,
+      "url": "https://webidu.idu.gov.co/servergis1/rest/services/Inventario/InventarioEspacioPublico/MapServer",
+      "fields": {
+        "all": true
+      }
+    }
+  ]
+}

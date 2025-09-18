@@ -1,0 +1,10 @@
+{
+  "serviceURL": "https://webidu.idu.gov.co/imageserver/rest/services/Impresion/impresion/GPServer/Export%20Web%20Map",
+  "defaultTitle": "Plano Cartografía SIGIDU",
+  "defaultAuthor": "Dirección Técnica de Inteligencia de Negocio e Innovación",
+  "defaultCopyright": "IDU - DTINI",
+  "defaultFormat": "PDF",
+  "defaultLayout": "planoLayoutSimple",
+  "copyrightEditable": false
+}
+

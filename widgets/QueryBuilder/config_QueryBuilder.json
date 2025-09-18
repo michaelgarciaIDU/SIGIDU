@@ -1,0 +1,73 @@
+{
+  "geometryService": "https://webidu.idu.gov.co/servergis1/rest/services/Utilities/Geometry/GeometryServer",
+  "layers": [
+    {
+      "name": "Segmento",
+      "id": 1,
+      "url": "https://webidu.idu.gov.co/servergis1/rest/services/Inventario/InventarioIDU/MapServer/0",
+      "fields": {
+        "all": false,
+        "field": [
+          {
+            "name": "CIV",
+            "alias": "CIV ",
+            "useralias": "CIV"
+          },
+          {
+            "name": "CODIGOUPZ",
+            "alias": "CODIGOUPZ",
+            "useralias": "Código UPZ"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Intervencion IDU",
+      "id": 2,
+      "url": "https://webidu.idu.gov.co/servergis1/rest/services/DTE/SIGIDU/MapServer/4",
+      "fields": {
+        "all": true
+      }
+    },
+    {
+      "name": "Proyecto General",
+      "id": 3,
+      "url": "https://webidu.idu.gov.co/servergis1/rest/services/DTE/SIGIDU/MapServer/2",
+      "fields": {
+        "all": true
+      }
+    },
+    {
+      "name": "Seguimiento Linea",
+      "id": 4,
+      "url": "https://webidu.idu.gov.co/servergis1/rest/services/DTE/SIGIDU/MapServer/6",
+      "fields": {
+        "all": true
+      }
+    },
+    {
+      "name": "Seguimiento Punto",
+      "id": 5,
+      "url": "https://webidu.idu.gov.co/servergis1/rest/services/DTE/SIGIDU/MapServer/7",
+      "fields": {
+        "all": true
+      }
+    },
+    {
+      "name": "Diseño",
+      "id": 6,
+      "url": "https://webidu.idu.gov.co/servergis1/rest/services/DTE/SIGIDU/MapServer/8",
+      "fields": {
+        "all": true
+      }
+    },
+    {
+      "name": "Linea Diseño",
+      "id": 7,
+      "url": "https://webidu.idu.gov.co/servergis1/rest/services/DTE/SIGIDU/MapServer/9",
+      "fields": {
+        "all": true
+      }
+    }
+  ]
+}

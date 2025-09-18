@@ -1,0 +1,304 @@
+﻿<div class="secondary-pane add-url-pane">
+  <div class="add-url-pane-container">
+    <div class="add-url-pane-container--inner">
+      <h3 style="text-align:center;"for="${id}_select">Información por Temáticas</h3>
+      <select id="${id}_select" style="display: none;"
+        data-dojo-type="dijit/form/Select" data-dojo-attach-point="typeSelect">
+        <option value="ArcGIS" selected="selected">Infraestructura vial</option>
+        
+      </select>      
+      
+      <div class="container mt-3" style="--bs-gutter-x: 0;">
+        <div class="dropdown">
+        <img src="widgets/AddData/images/uno.png" style="float: left;height: 40px; width: 40px;">
+        <label style="cursor: pointer;" for="touch" onclick="myFunction(this)"><a class="jimu-float-leading" type="text" >Información de Referencia</a><a ><span  id="sp1" style="float: right;"class='esri-icon-down-arrow'></span></a></label>  
+        <input type="checkbox" id="touch" >
+       
+
+        <ul class="slide">
+          <li >
+              <input style="display: none" type="text" class="url-textbox jimu-input"
+              data-dojo-attach-point="urlTextBox"
+              data-dojo-type="dijit/form/ValidationTextBox"
+              data-dojo-props="
+                regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+              " value="https://serviciosgis.catastrobogota.gov.co/arcgis/rest/services/ordenamientoterritorial/localidad/MapServer/0"/>
+                <a class="jimu-float-leading" type="text" >Localidades</a>
+                
+              <a
+                href="javascript:void(0)"
+                data-dojo-attach-point="addButton"
+                data-dojo-attach-event="onClick: addClicked"
+                ><span class='esri-icon-plus'></span>
+              </a>
+          </li> 
+          <li>
+            <input style="display: none" type="text" class="url-textbox jimu-input"
+            data-dojo-attach-point="urlTextBox1"
+            data-dojo-type="dijit/form/ValidationTextBox"
+            data-dojo-props="
+              regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+            " value="https://serviciosgis.catastrobogota.gov.co/arcgis/rest/services/ordenamientoterritorial/unidadplaneamientozonal/MapServer/0"/>
+              <a class="jimu-float-leading" type="text" >Unidad de Planeamiento Zonal</a>
+            <a 
+              href="javascript:void(0)"
+              data-dojo-attach-point="addButton1"
+              data-dojo-attach-event="onClick: addClicked1"
+              ><span class='esri-icon-plus'></span>
+            </a>
+          </li>
+          <li>
+            <input style="display: none" type="text" class="url-textbox jimu-input"
+            data-dojo-attach-point="urlTextBox2"
+            data-dojo-type="dijit/form/ValidationTextBox"
+            data-dojo-props="
+              regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+            " value="https://serviciosgis.catastrobogota.gov.co/arcgis/rest/services/ordenamientoterritorial/barrioslegalizados/MapServer/0"/>
+              <a class="jimu-float-leading" type="text">Barrios</a>
+            <a 
+              href="javascript:void(0)"
+              data-dojo-attach-point="addButton2"
+              data-dojo-attach-event="onClick: addClicked2"
+              ><span class='esri-icon-plus'></span>
+            </a>
+          </li>
+          <li>
+            <input style="display: none" type="text" class="url-textbox jimu-input"
+            data-dojo-attach-point="urlTextBox3"
+            data-dojo-type="dijit/form/ValidationTextBox"
+            data-dojo-props="
+              regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+            " value="https://serviciosgis.catastrobogota.gov.co/arcgis/rest/services/catastro/manzana/MapServer/0"/>
+              <a class="jimu-float-leading" type="text">Manzanas</a>
+            <a 
+              href="javascript:void(0)"
+              data-dojo-attach-point="addButton3"
+              data-dojo-attach-event="onClick: addClicked3"
+              ><span class='esri-icon-plus'></span>
+            </a>
+          </li>
+          
+        </ul> 
+      </div>     
+      </div>
+      <div  class="container mt-3" style="--bs-gutter-x: 0">
+        <img src="widgets/AddData/images/icon2.png" style="float: left;height: 40px; width: 40px;">
+        <label style="cursor: pointer;" for="touch2" onclick="myFunction2(this)"><a class="jimu-float-leading" type="text" >Ambiental</a><a ><span  style="float: right;" id="sp2" class='esri-icon-down-arrow'></span></a></label>  
+        <input type="checkbox" id="touch2" >
+       
+
+        <ul class="slide2">
+          <li>
+              <input style="display: none" type="text" class="url-textbox jimu-input"
+              data-dojo-attach-point="urlTextBoxEP1"
+              data-dojo-type="dijit/form/ValidationTextBox"
+              data-dojo-props="
+                regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+              " value="https://sinu.sdp.gov.co/serverp/rest/services/AMBIENTE/Sistema_Distrital_Parques/MapServer/0"/>
+                <a class="jimu-float-leading" type="text" >Parques</a>
+                
+              <a
+                href="javascript:void(0)"
+                data-dojo-attach-point="addButtonEP1"
+                data-dojo-attach-event="onClick: addClickedEP1"
+                ><span class='esri-icon-plus'></span>
+              </a>
+          </li> 
+          <li>
+            <input style="display: none" type="text" class="url-textbox jimu-input"
+            data-dojo-attach-point="urlTextBoxEP2"
+            data-dojo-type="dijit/form/ValidationTextBox"
+            data-dojo-props="
+              regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+            " value="https://sinu.sdp.gov.co/serverp/rest/services/AMBIENTE/Area_Manejo_Especial/MapServer/0"/>
+              <a class="jimu-float-leading" type="text" >ZMPA</a>
+            <a 
+              href="javascript:void(0)"
+              data-dojo-attach-point="addButtonEP2"
+              data-dojo-attach-event="onClick: addClickedEP2"
+              ><span class='esri-icon-plus'></span>
+            </a>
+          </li>
+          <li>
+            <input style="display: none" type="text" class="url-textbox jimu-input"
+            data-dojo-attach-point="urlTextBoxEP3"
+            data-dojo-type="dijit/form/ValidationTextBox"
+            data-dojo-props="
+              regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+            " value="https://sinu.sdp.gov.co/serverp/rest/services/AMBIENTE/Area_Manejo_Especial/MapServer/1"/>
+              <a class="jimu-float-leading" type="text">Ronda Hidráulica</a>
+            <a 
+              href="javascript:void(0)"
+              data-dojo-attach-point="addButtonEP3"
+              data-dojo-attach-event="onClick: addClickedEP3"
+              ><span class='esri-icon-plus'></span>
+            </a>
+          </li>
+          <li>
+            <input style="display: none" type="text" class="url-textbox jimu-input"
+            data-dojo-attach-point="urlTextBoxEP4"
+            data-dojo-type="dijit/form/ValidationTextBox"
+            data-dojo-props="
+              regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+            " value="https://sinu.sdp.gov.co/serverp/rest/services/AMBIENTE/Area_Manejo_Especial/MapServer/2"/>
+              <a class="jimu-float-leading" type="text">Ronda Bogotá</a>
+            <a 
+              href="javascript:void(0)"
+              data-dojo-attach-point="addButtonEP4"
+              data-dojo-attach-event="onClick: addClickedEP4"
+              ><span class='esri-icon-plus'></span>
+            </a>
+          </li>
+          <li>
+            <input style="display: none" type="text" class="url-textbox jimu-input"
+            data-dojo-attach-point="urlTextBoxEP5"
+            data-dojo-type="dijit/form/ValidationTextBox"
+            data-dojo-props="
+              regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+            " value="https://sinu.sdp.gov.co/serverp/rest/services/AMBIENTE/Area_Manejo_Especial/MapServer/3"/>
+              <a class="jimu-float-leading" type="text">Franja de Adecuación</a>
+            <a 
+              href="javascript:void(0)"
+              data-dojo-attach-point="addButtonEP5"
+              data-dojo-attach-event="onClick: addClickedEP5"
+              ><span class='esri-icon-plus'></span>
+            </a>
+          </li>
+          
+        </ul>  
+      </div>
+      <div  class="container mt-3" style="--bs-gutter-x: 0">
+        <img src="widgets/AddData/images/ciclo2.png" style="float: left;height: 40px; width: 40px;">
+        <label style="cursor: pointer;" for="touch3" onclick="myFunction3(this)"><a  class="jimu-float-leading" type="text" >Transporte</a><a ><span  style="float: right;" id="sp3" class='esri-icon-down-arrow'></span></a></label>  
+        <input type="checkbox" id="touch3" >
+        <ul class="slide3">
+          <li>
+              <input style="display: none" type="text" class="url-textbox jimu-input"
+              data-dojo-attach-point="urlTextBoxCI1"
+              data-dojo-type="dijit/form/ValidationTextBox"
+              data-dojo-props="
+                regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+              " value="https://sinu.sdp.gov.co/serverp/rest/services/VIAS_Y_TRANSPORTE/Transporte/MapServer/0"/>
+                <a class="jimu-float-leading" type="text" >Ruta Troncal de Transmilenio</a>
+                
+              <a
+                href="javascript:void(0)"
+                data-dojo-attach-point="addButtonCI1"
+                data-dojo-attach-event="onClick: addClickedCI1"
+                ><span class='esri-icon-plus'></span>
+              </a>
+          </li>
+          <li>
+            <input style="display: none" type="text" class="url-textbox jimu-input"
+            data-dojo-attach-point="urlTextBoxCI2"
+            data-dojo-type="dijit/form/ValidationTextBox"
+            data-dojo-props="
+              regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+            " value="https://sinu.sdp.gov.co/serverp/rest/services/VIAS_Y_TRANSPORTE/Transporte/MapServer/2"/>
+              <a class="jimu-float-leading" type="text" >Estación de Transmilenio</a>
+              
+            <a
+              href="javascript:void(0)"
+              data-dojo-attach-point="addButtonCI2"
+              data-dojo-attach-event="onClick: addClickedCI2"
+              ><span class='esri-icon-plus'></span>
+            </a>
+        </li> 
+        </ul>
+      </div>
+      <div  class="container mt-3" style="--bs-gutter-x: 0">
+        <img src="widgets/AddData/images/satelite.png" style="float: left;height: 40px; width: 40px; ">
+        <label style="cursor: pointer;" for="touch4" onclick="myFunction4(this)"><a  class="jimu-float-leading" type="text" >Imágenes Satelitales</a><a ><span  style="float: right;" id="sp4" class='esri-icon-down-arrow'></span></a></label>  
+        <input type="checkbox" id="touch4" >
+        <ul class="slide4">
+          <li>
+              <input style="display: none" type="text" class="url-textbox jimu-input"
+              data-dojo-attach-point="urlTextBoxIS1"
+              data-dojo-type="dijit/form/ValidationTextBox"
+              data-dojo-props="
+                regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+              " value="https://serviciosgis.catastrobogota.gov.co/arcgis/rest/services/imagenes/Ortho2014/MapServer"/>
+                <a class="jimu-float-leading" type="text" >Ortofoto 2014</a>
+                
+              <a
+                href="javascript:void(0)"
+                data-dojo-attach-point="addButtonIS1"
+                data-dojo-attach-event="onClick: addClickedIS1"
+                ><span class='esri-icon-plus'></span>
+              </a>
+          </li>
+          <li>
+            <input style="display: none" type="text" class="url-textbox jimu-input"
+            data-dojo-attach-point="urlTextBoxIS2"
+            data-dojo-type="dijit/form/ValidationTextBox"
+            data-dojo-props="
+              regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+            " value="https://serviciosgis.catastrobogota.gov.co/arcgis/rest/services/imagenes/OrthoRural2020/MapServer"/>
+              <a class="jimu-float-leading" type="text" >Ortofoto Rural Bogotá 2020</a>
+              
+            <a
+              href="javascript:void(0)"
+              data-dojo-attach-point="addButtonIS2"
+              data-dojo-attach-event="onClick: addClickedIS2"
+              ><span class='esri-icon-plus'></span>
+            </a>
+        </li>
+        <li>
+          <input style="display: none" type="text" class="url-textbox jimu-input"
+          data-dojo-attach-point="urlTextBoxIS3"
+          data-dojo-type="dijit/form/ValidationTextBox"
+          data-dojo-props="
+            regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+          " value="https://webidu.idu.gov.co/imageserver/rest/services/OrtofotoBogota/BogotaUrbano2020/ImageServer/WMTS"/>
+            <a class="jimu-float-leading" type="text" >Ortofoto Urbano Bogotá 2020</a>
+            
+          <a
+            href="javascript:void(0)"
+            data-dojo-attach-point="addButtonIS3"
+            data-dojo-attach-event="onClick: addClickedIS3"
+            ><span class='esri-icon-plus'></span>
+          </a>
+      </li>
+        </ul>
+      </div>
+      <!--
+        <select id="${id}_select"
+        data-dojo-type="dijit/form/Select" data-dojo-attach-point="typeSelect">
+        <option value="ArcGIS" selected="selected">${i18n.addFromUrl.types.ArcGIS}</option>
+        <option value="WMS">${i18n.addFromUrl.types.WMS}</option>
+        <option value="WMTS">${i18n.addFromUrl.types.WMTS}</option>
+        <option value="WFS">${i18n.addFromUrl.types.WFS}</option>
+        <option value="KML">${i18n.addFromUrl.types.KML}</option>
+        <option value="GeoRSS">${i18n.addFromUrl.types.GeoRSS}</option>
+        <option value="CSV">${i18n.addFromUrl.types.CSV}</option>
+      </select>
+      <label for="${id}_url">${i18n.addFromUrl.url}</label>
+      <input id="${id}_url" type="text" class="url-textbox jimu-input"
+          data-dojo-attach-point="urlTextBox"
+          data-dojo-type="dijit/form/ValidationTextBox"
+          data-dojo-props="
+            regExp: '^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+          "/>
+      <div class="action-bar">
+        <a class="jimu-float-leading" href="javascript:void(0)"
+          data-dojo-attach-point="examplesExpander"
+          data-dojo-attach-event="onClick: examplesExpanderClicked"
+          >${i18n.addFromUrl.samplesHint}</a>
+        <a class="jimu-btn"
+          href="javascript:void(0)"
+          data-dojo-attach-point="addButton"
+          data-dojo-attach-event="onClick: addClicked"
+          >${i18n.search.item.actions.add}
+        </a>
+      </div>
+      -->
+      
+      <div  data-dojo-attach-point="examplesNode">
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  

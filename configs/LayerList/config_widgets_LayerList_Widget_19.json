@@ -1,0 +1,42 @@
+{
+  "showTitle": false,
+  "showBasemap": false,
+  "showLegend": true,
+  "expandAllLayersByDefault": false,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "SetVisibilityRange": false,
+    "EnableOrDisablePopup": false,
+    "ControlLabels": false,
+    "MoveupOrMovedown": false,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "InventarioInfraestructuraPuente_1767": {
+      "display": true
+    },
+    "InventarioEspacioPublico_9563": {
+      "display": true
+    },
+    "InventarioEspacioPublico_9563_4": {
+      "display": true
+    },
+    "InventarioEspacioPublico_9563_0": {
+      "display": true
+    },
+    "InventarioEspacioPublico_9563_1": {
+      "display": true
+    },
+    "InventarioEspacioPublico_9563_2": {
+      "display": true
+    },
+    "InventarioEspacioPublico_9563_3": {
+      "display": true
+    },
+    "InventarioEspacioPublico_9563_5": {
+      "display": true
+    }
+  }
+}

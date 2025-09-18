@@ -1,0 +1,28 @@
+{
+  "layerInfos": [
+    {
+      "name": "InventarioIDU",
+      "id": "InventarioIdu",
+      "layer": {
+        "url": "https://webidu.idu.gov.co/servergis1/rest/services/Inventario/InventarioIDU/MapServer"
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "OBJECTID",
+      "isDescending": false
+    }
+  ],
+  "table": {
+    "pageSizeOptions": [
+      25,
+      50,
+      100,
+      1000
+    ]
+  },
+  "hideExportButton": false,
+  "initiallyExpand": false,
+  "filterByMapExtent": false,
+  "allowTextSelection": true,
+  "syncWithLayers": false
+}

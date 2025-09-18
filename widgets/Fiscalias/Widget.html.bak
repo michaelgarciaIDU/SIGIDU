@@ -1,0 +1,39 @@
+<div style="width: 100%;height: 100%;">
+  <div data-dojo-attach-point="setting" style="width: 100%;height: 16px;"></div>
+  <div data-dojo-attach-point="container" style="width: 100%;height: calc(100% - 10px)">
+    <h2 style="text-align: center">Módulo de Fiscalías</h2>
+    <br>
+    <!-- Layer list  -->
+    <b>Ingrese la dirección a buscar.</b><br><br>    
+    <div id="search"></div> 
+    <!-- Medir en el mapa  -->
+    <b>Herramientas para medir en el mapa</b><br>
+    <button id="polyline" data-dojo-type="dijit/form/Button" title="Medir linealmente"><img src="widgets/Fiscalias/images/lineal.png" ></button>
+    <button id="polygon" data-dojo-type="dijit/form/Button" title="Medir por área"><img src="widgets/Fiscalias/images/area.png" ></button>
+    <button id="limpiar" data-dojo-type="dijit/form/Button" title="Borrar gráficos de medida"><img src="widgets/Fiscalias/images/cerrar.png" ></button> <br>
+    <div id="medida"></div><br>
+    <!-- Descargar PNG  -->
+    <b>Descargar mapa en .png</b><br>
+    <button id="descargarPNG" title="Descargar imagen en PNG"><img src='widgets/Fiscalias/images/png.png'></button><br><br>              
+    <!-- Mostrar puente más cercano  -->
+    <div id="borrarG" style="display: none;">
+        <b>Borrar selección</b><br>
+        <button data-dojo-type="dijit/form/Button" title="Borrar selección" ><img src='widgets/Fiscalias/images/brocha.png'></button><br><br> </div>
+    <div id="datosPuente" style="display: none;">
+        <b>Puente peatonal más cercano</b>
+        <div id="puenteCerca"></div><br>
+        <b>Distancia al puente más cercano</b>
+        <div id="distancia"></div>                    
+    </div>
+    <div id="datosPuentevehi" style="display: none;">
+        <b>Puente Vehicular más cercano</b>
+        <div id="puenteCercavehi"></div><br>
+        <b>Distancia al puente vehicular más cercano</b>
+        <div id="distanciavehi"></div>                    
+    </div>
+
+
+  </div>
+  <div data-dojo-attach-point="shelter" class="loading hide"></div>
+  <div data-dojo-attach-point="virtualFocusNode" class="lastFocusNode screen-readers-only" tabindex="0"></div>
+</div>

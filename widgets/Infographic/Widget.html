@@ -1,0 +1,79 @@
+<div style="width: 100%;height: 100%;">
+  <div data-dojo-attach-point="setting" style="width: 100%;height: 16px;"></div>
+  <div data-dojo-attach-point="container" style="width: 100%;height: calc(100% - 10px)">
+    <h2 style="text-align: center">Resumen de Estadísticas</h2>
+    <br>
+    <div style="border-top: 1px solid;cursor: pointer;" onclick="location.href='#popup';">
+      <img style="float:left;"src="widgets\Infographic\images\ciclorruta.jpg"/><h3>&nbsp;&nbsp;&nbsp;Inventario de la Red Ciclorrutas</h3>
+    </div>
+    <br><br>
+    <div style="border-top: 1px solid;cursor: pointer;" onclick="location.href='#popup2';">
+      <img style="float:left;"src="widgets\Infographic\images\espaciopublico.png"/><h3>&nbsp;&nbsp;&nbsp;Inventario de Espacio Público</h3>
+    </div>
+    <br><br>
+    <div style="border-top: 1px solid;cursor: pointer;" onclick="location.href='#popup3';">
+      <img style="float:left;"src="widgets\Infographic\images\mallavial.jpg"/><h3>&nbsp;&nbsp;&nbsp;Estado de la Malla Vial</h3>
+    </div>
+    <br><br>
+    <div style="border-top: 1px solid;border-bottom: 1px solid;cursor: pointer;" onclick="location.href='#popup4';">
+      <img style="float:left;"src="widgets\Infographic\images\puentes.jpg"/><h3>&nbsp;&nbsp;&nbsp;Inventario Estado de Puentes</h3>
+      <br><br>
+    </div>
+    <div>
+      <a href="#">
+      <div id="popup" class="overlay">
+        <form method="post" id="popupBody">
+          <iframe 
+            width="100%"
+            height="100%"
+            src="https://experience.arcgis.com/experience/d1a3e9f7fe794af3bc2bdf5efe9d5ff1">
+        </iframe>
+        </form> 
+      </div>
+    </a>
+    </div>
+      <div>
+        <a href="#">
+        <div id="popup2" class="overlay2">
+          <form method="post" id="popupBody2">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://experience.arcgis.com/experience/2097e7f53fcb4664967b123c4b1a82ff">
+            </iframe>
+          </form> 
+        </div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+        <div id="popup3" class="overlay3">
+          <form method="post" id="popupBody3">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://experience.arcgis.com/experience/d1e91e3096b24c28b6f5291513c48fc9">
+            </iframe>
+          </form> 
+        </div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+        <div id="popup4" class="overlay4">
+          <form method="post" id="popupBody4">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://idu.maps.arcgis.com/apps/dashboards/eae74f19b3c44edfbee656148ec206f9">
+            </iframe>
+          </form> 
+        </div>
+        </a>
+      </div>
+
+
+  </div>
+  <div data-dojo-attach-point="shelter" class="loading hide"></div>
+  <div data-dojo-attach-point="virtualFocusNode" class="lastFocusNode screen-readers-only" tabindex="0"></div>
+</div>

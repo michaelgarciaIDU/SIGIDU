@@ -1,0 +1,56 @@
+<div style="width: 100%;height: 100%;">
+  <div data-dojo-attach-point="setting" style="width: 100%;height: 16px;"></div>
+  <div data-dojo-attach-point="container" style="width: 100%;height: calc(100% - 10px)">
+    <h2 style="text-align: center">Módulo de Fiscalías</h2>
+    <br>
+    <!-- Layer list  -->
+    <b>Ingrese la dirección a buscar.</b><br><br>    
+    <div id="search"></div><br><br> 
+    
+    <!-- Descargar PNG  -->
+    <b>Descargar imagen en .png</b><br><br>
+    <button data-dojo-type="dijit/form/Button" id="descargarPNG" class="dijitReset dijitInline dijitButtonNode" title="Descargar imagen en PNG" ><img src='widgets/Fiscalias/images/download.png'></button><br><br>              
+    <!-- Mostrar puente más cercano  -->
+    <div id="borrarG" style="display: none;">
+        <b>Borrar selección</b><br><br>
+        <button data-dojo-type="dijit/form/Button" class="dijitReset dijitInline dijitButtonNode" title="Borrar selección" ><img src='widgets/Fiscalias/images/brocha.png'></button><br><br>
+    </div>
+        <div id="contenedor_tabFis" data-dojo-type="dijit/layout/TabContainer" style="width:100%; height: 50%">
+          <div id="contenedorqbFis" data-dojo-type="dijit/layout/ContentPane" title="Resultado de la Consulta">
+            <div id="datosPuente" style="display: none;">
+              <br>
+              <b>Puente peatonal más cercano</b>
+              <div id="puenteCerca"></div><br>
+              <b>Distancia al puente más cercano</b>
+              <div id="distancia"></div> 
+              <br>
+              <a>------------------------------------------------------------------</a> 
+              <br>                  
+            </div>
+            
+            <div id="datosPuentevehi" style="display: none;">
+                <br>
+                <b>Puente Vehicular más cercano</b>
+                <div id="puenteCercavehi"></div><br>
+                <b>Distancia al puente vehicular más cercano</b>
+                <div id="distanciavehi"></div>                    
+            </div>
+
+          </div>
+          <!--
+          <div class="gis_qbDijit" id="querybuildertablaFis" data-dojo-type="dijit/layout/ContentPane" title="Resultados de la consulta">
+
+            <div id="myTableNodeFis" style="width: 100%; height: 500px"></div>
+
+            <button data-dojo-type="dijit/form/Button" id="exportarFis" style="display: none">Exportar a Excel (.csv)</button>
+
+        </div>  --> 
+ 
+      </div>
+    
+  </div>
+  <div data-dojo-attach-point="shelter" class="loading hide"></div>
+  <div data-dojo-attach-point="virtualFocusNode" class="lastFocusNode screen-readers-only" tabindex="0"></div>
+
+</div>
+

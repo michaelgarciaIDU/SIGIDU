@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+  <title>ArcGIS Web Application</title>
+  <link rel="shortcut icon" href="https://www.idu.gov.co/web/image/website/1/favicon/">
+  <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css"  href="jimu.js/css/jimu-ie.css" />
+  <![endif]-->
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    #main-loading {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      overflow: hidden;
+    }
+    #main-page {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    #jimu-layout-manager {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    #unsupported-browser-message{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,0.6);
+
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+
+      .browser-message {
+        width: 700px;
+        max-width: 100%;
+        max-height: 100%;
+        overflow-y: auto;
+        background: #fff;
+        color: #333;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .browser-button-container {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .browser-button-container button{
+        cursor: pointer;
+        border: none;
+        background: transparent;
+      }
+
+      .browser-button-container img{
+        width: 20px;
+        height: 20px;
+      }
+
+      .browser-message-title {
+        color: #002625;
+        font-weight: 300;
+        margin: 1.5rem auto;
+        font-size: 2.5rem;
+        line-height: 2rem;
+      }
+
+      .browser-message-content {
+        color: #3d6665;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 2rem;
+      }
+
+      #browser-logo-list {
+        display: flex;
+        align-items: center;
+        margin: 2rem 1rem 0 1rem;
+        padding: 0;
+      }
+
+      .browser-logo {
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      .browser-logo img {
+        width: 3rem;
+        height: auto;
+      }
+
+      @media (min-width:700px) {
+        .browser-logo img {
+          width: 4rem;
+        }
+      }
+  </style>
+  <link rel="stylesheet" type="text/css" href="configs/loading/loading.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  <script>
+    /*******************************
+     * This is the function you can modify to customize the loading page
+     * This function will be invoked when one resource is loaded.
+     ********************************/
+    // var progress;
+    // function loadingCallback(url, i, count) {
+    // 	var loading = document.getElementById('main-loading-bar');
+    // 	loading.setAttribute('title', url);
+    //   if(!progress){
+    //     progress = document.createElement('div');
+    //     progress.setAttribute('class', 'loading-progress');
+    //     loading.appendChild(progress);
+    //   }
+    //   progress.style.width = (((i - 1)/count) * 100) + '%';
+    // }
+
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  
+  </script>
+  <script>
+    (function(d){
+         var s = d.createElement("script");
+         /* uncomment the following line to override default position*/
+         /* s.setAttribute("data-position", 1);*/
+         /* uncomment the following line to override default size (values: small, large)*/
+          s.setAttribute("data-size", "large");
+         /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+         s.setAttribute("data-language", "es");
+         /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+         s.setAttribute("data-color", "#c8d41e");
+         /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+         /* s.setAttribute("data-type", "1");*/
+         /* s.setAttribute("data-statement_text:", "Our Accessibility Statement");*/
+         /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility";*/
+         /* uncomment the following line to override support on mobile devices*/
+         /* s.setAttribute("data-mobile", true);*/
+         /* uncomment the following line to set custom trigger action for accessibility menu*/
+         /* s.setAttribute("data-trigger", "triggerId")*/
+         s.setAttribute("data-account", "3f9z61HN1M");
+         s.setAttribute("src", "https://cdn.userway.org/widget.js");
+         (d.body || d.head).appendChild(s);})
+  (document)
+  </script>
+  <style>
+    .uwy.userway_p1 .uai {
+      top: 50%!important;
+      right: 5px!important;      
+    }
+    .uwy.userway_p1 .userway_buttons_wrapper{
+      top: 50%!important;
+      right: 5px!important;
+    }
+    
+    
+  </style>
+</head>
+
+<body class="claro jimu-main-font">
+
+  <div id="main-loading">
+
+    <!-- This is section you can modify to customize the loading page -->
+    <div id="app-loading"></div>
+    <div id="loading-gif">
+      <div class="loader"></div>
+    </div>
+    
+
+    <!-- //////////////////    END    ////////////////////////////// -->
+    <!--[if IE 8]>
+    <div id="ie-note" style="display:none;">
+      <div class="hint-title">Error</div>
+      <div class="hint-img">Your browser is currently not supported.</div>
+      <p class="hint-text">
+        <span>
+          Please note that creating presentations is not supported in Internet Explorer versions 6, 7.
+        </span>
+        <br>
+        <span>
+          We recommend upgrading to the latest Internet Explorer, Google Chrome, or Firefox.
+        </span>
+        <br>
+        <span>
+          If you are using IE 8 or later, make sure you turn off "Compatibility View".
+        </span>
+      </p>
+    </div>
+    <![endif]-->
+  </div>
+  <div id="main-page" role="application">
+    
+    <div class="trapLinkNode" tabindex="0"></div>
+    <div id="jimu-layout-manager"></div>
+    <div id="skipContainer"></div>
+    <div class="trapLinkNode lastTrapLinkNode" tabindex="0"></div>
+  </div>
+
+  <div id="unsupported-browser-message">
+    <div class="browser-message">
+      <div class="browser-button-container">
+        <button><img src="./browser-message/close.png"></button>
+      </div>
+      <h1 class="browser-message-title" id="message-title"></h1>
+      <p class="browser-message-content" id="message-content-1"></p>
+      <p class="browser-message-content" id="message-content-2"></p>
+      <p class="browser-message-content" id="message-content-3"></p>
+      <ul id="browser-logo-list">
+        <li class="browser-logo"><a href="https://www.google.com/chrome/"><img alt="Chrome" src="./browser-message/chrome.png"></a></li>
+        <li class="browser-logo"><a href="https://www.mozilla.org/firefox/"><img alt="Firefox" src="./browser-message/firefox.png"></a></li>
+        <li class="browser-logo"><a href="https://www.apple.com/safari/"><img alt="Safari" src="./browser-message/safari.png"></a></li>
+        <li class="browser-logo"><a href="https://www.microsoft.com/edge"><img alt="Edge" src="./browser-message/edge.png"></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="./service-worker-registration.js"></script>
+  <script type="text/javascript" src="env.js"></script>
+  <script type="text/javascript" src="browser-message/limited-unsupported-browser.js"></script>
+  <script type="text/javascript" src="simpleLoader.js"></script>
+  <script type="text/javascript" src="init.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function myFunction(x) {
+      document.getElementById("sp1").classList.toggle("esri-icon-up-arrow");
+    }
+    function myFunction2(x) {
+      document.getElementById("sp2").classList.toggle("esri-icon-up-arrow");
+    }
+    function myFunction3(x) {
+      document.getElementById("sp3").classList.toggle("esri-icon-up-arrow");
+    }
+    function myFunction4(x) {
+      document.getElementById("sp4").classList.toggle("esri-icon-up-arrow");
+    }
+    
+  </script>
+  <script>
+  // Set the locale before the JSAPI loads
+  esriConfig = {
+    locale: "fr-FR"
+  };
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFQYS7HN23"></script> <script> window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-TFQYS7HN23'); </script>
+
+</body>
+
+</html>

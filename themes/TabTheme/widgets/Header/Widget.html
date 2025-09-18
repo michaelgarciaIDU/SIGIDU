@@ -1,0 +1,25 @@
+<div data-a11y-label-by="tab_header_label tab_header_title tab_header_subtitle">
+  <div class="logo jimu-float-leading jimu-leading-margin1" data-dojo-attach-point="logoNodeContainer">
+    <a data-dojo-attach-point="logoLinkNode" target="_blank">
+      <img data-dojo-attach-point="logoNode">
+    </a>
+  </div>
+  <div class="titles jimu-float-leading jimu-leading-margin1" data-dojo-attach-point="titlesNode">
+    <div class="screen-readers-only" data-a11y-label-id="tab_header_label">${label}</div>
+    <h1 class="jimu-title jimu-float-leading" data-dojo-attach-point="titleNode" data-a11y-label-id="tab_header_title"></h1>
+    <h2 class="jimu-subtitle jimu-float-leading jimu-leading-margin2" data-dojo-attach-point="subtitleNode" data-a11y-label-id="tab_header_subtitle">Esto es una Prueba</h2>
+    <div style="position: absolute; right: 180px;" ><h3 style="margin-top: 10px;color:white;cursor: pointer"><a alt="Descubre el Geoportal IDU" style="color:white" href="https://geoportal-idu.hub.arcgis.com/"  target="_blank">Geoportal IDU</a></h3></div>
+    <div style="position: absolute; right: 60px;" ><h3 style="margin-top: 10px;color:white;cursor: pointer"><a alt="Descubre los Mapas IDU" style="color:white" href="https://idu.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=656bfd74c2d044b58bf10d14240f24f4"  target="_blank">Mapas Temáticos</a></h3></div>
+  </div>
+  <div class="links jimu-float-trailing jimu-trailing-margin25" data-dojo-attach-point="linksNode">
+    <span class="dynamic-section" data-dojo-attach-point="dynamicLinksNode"></span>
+    <a class="link" href="#" data-dojo-attach-point="aboutNode" data-dojo-attach-event="onclick:_onAboutClick">${nls.about}</a>
+    <span class="signin-section" data-dojo-attach-point="signInSectionNode">
+      <a href="#" class="link" data-dojo-attach-event="onclick:_onSigninClick"
+      data-dojo-attach-point="signinLinkNode">${nls.signin}</a>
+      <a href="#" target="_blank" class="link" data-dojo-attach-event="onclick:_onUserNameClick" data-dojo-attach-point="userNameLinkNode"></a>
+      <a href="#" class="link" data-dojo-attach-event="onclick:_onSignoutClick" data-dojo-attach-point="signoutLinkNode">${nls.signout}</a>
+    </span>
+
+  </div>
+</div>

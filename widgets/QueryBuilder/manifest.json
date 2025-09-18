@@ -1,0 +1,23 @@
+{
+  "name": "queryBuilder",
+  "2D":"true",
+  "3D":"false",
+  "platform": "HTML",
+  "version": "0.0.1",
+  "author": "",
+  "description": "This is the custom widget",
+  "copyright": "Esri Colombia",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+		"inPanel":true,
+		"hasLocale": true,
+		"hasStyle":true,
+		"hasConfig":true,
+		"hasUIFile":true,
+		"hasSettingPage":true,
+		"hasSettingUIFile":true,
+		"hasSettingLocale":true,
+		"hasSettingStyle":true,
+		"IsController":false
+  }
+}

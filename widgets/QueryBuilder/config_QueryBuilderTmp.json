@@ -1,0 +1,301 @@
+{
+  "geometryService": "http://gis.catastrobogota.gov.co/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+    "layers": [
+      {
+        "name": "Placa Domiciliaria",
+        "id": 0,
+        "url": "http://gis.catastrobogota.gov.co/arcgis/rest/services/catastro1/MapServer",
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "PLDLOTE_ID",
+              "alias": "Lote_ID",
+              "useralias": "Lote Id"
+            },
+            {
+              "name": "PLDPLACA",
+              "alias": "PLACA",
+              "useralias": "Placa"
+            },
+            {
+              "name": "PLDTPLACAD",
+              "alias": "T_PLACAD",
+              "useralias": "T_placad"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Construcciones",
+        "url": "http://gis.catastrobogota.gov.co/arcgis/rest/services/catastro1/MapServer",
+        "id": 1,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "CONCONS_ID",
+              "alias": "Construccion_ID",
+              "useralias": "Construccion Id"
+            },
+            {
+              "name": "CONLOTE_ID",
+              "alias": "Lote_ID",
+              "useralias": "Lote Id"
+            },
+            {
+              "name": "CONMEJORA",
+              "alias": "Mejora",
+              "useralias": "Mejora"
+            },
+            {
+              "name": "CONNPISOS",
+              "alias": "NUMERO_PISOS",
+              "useralias": "Numero de Pisos"
+            },
+            {
+              "name": "CONNSOTANO",
+              "alias": "NUMERO_SOTANOS",
+              "useralias": "Numero de Sotanos"
+            },
+            {
+              "name": "SHAPE.AREA",
+              "alias": "SHAPE.AREA",
+              "useralias": "Area"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Lote",
+        "url": "http://gis.catastrobogota.gov.co/arcgis/rest/services/catastro1/MapServer",
+        "id": 2,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "LOTLOTE_ID",
+              "alias": "Lote_ID",
+              "useralias": "Lote Id"
+            },
+            {
+              "name": "LOTUNIDAPH",
+              "alias": "Unidad_PH",
+              "useralias": "Unidad PH"
+            },
+            {
+              "name": "LOTDISTRIT",
+              "alias": "Distrito",
+              "useralias": "Distrito"
+            },
+            {
+              "name": "LOTTIPO",
+              "alias": "Tipo",
+              "useralias": "Tipo"
+            },
+            {
+              "name": "LOTCLINDER",
+              "alias": "TieneCertificacionLinderos",
+              "useralias": "Tiene Certificacion Linderos"
+            },
+            {
+              "name": "LOTMTOPOGR",
+              "alias": "ModificadoTopograficos",
+              "useralias": "Modificado Topograficos"
+            },
+            {
+              "name": "LOTTMEJORA",
+              "alias": "TieneMejora",
+              "useralias": "Tiene Mejora"
+            },
+            {
+              "name": "LOTDISPERS",
+              "alias": "Disperso",
+              "useralias": "Disperso"
+            },
+            {
+              "name": "LOTDISP_ID",
+              "alias": "Disperso_ID",
+              "useralias": "Disperso ID"
+            },
+            {
+              "name": "SHAPE.AREA",
+              "alias": "SHAPE.AREA",
+              "useralias": "Area"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Manzanas",
+        "url": "http://gis.catastrobogota.gov.co/arcgis/rest/services/catastro1/MapServer",
+        "id": 3,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "MANMANZ_ID",
+              "alias": "Manzana_ID",
+              "useralias": "Manzana Id"
+            },
+            {
+              "name": "SHAPE.AREA",
+              "alias": "SHAPE.AREA",
+              "useralias": "Area"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sector",
+        "url": "http://gis.catastrobogota.gov.co/arcgis/rest/services/catastro1/MapServer",
+        "id": 4,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "SECSECT_ID",
+              "alias": "Sector_ID",
+              "useralias": "Sector Id"
+            },
+            {
+              "name": "SECTSECTOR",
+              "alias": "Tipo_Sector",
+              "useralias": "Tipo Sector"
+            },
+            {
+              "name": "SECTAREA",
+              "alias": "Tipo_Area",
+              "useralias": "Tipo Area"
+            },
+            {
+              "name": "SECNOMBRE",
+              "alias": "Nombre",
+              "useralias": "Nombre"
+            },
+            {
+              "name": "SECLOCA_ID",
+              "alias": "Localidad_ID",
+              "useralias": "Localidad Id"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cabida y Linderos",
+        "url": "http://gis.catastrobogota.gov.co/arcgis/rest/services/catastro1/MapServer",
+        "id": 5,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "LOTLOTE_ID",
+              "alias": "Lote_ID",
+              "useralias": "Lote Id"
+            },
+            {
+              "name": "LOTUNIDAPH",
+              "alias": "Unidad_PH",
+              "useralias": "Unidad PH"
+            },
+            {
+              "name": "LOTDISTRIT",
+              "alias": "Distrito",
+              "useralias": "Distrito"
+            },
+            {
+              "name": "LOTTIPO",
+              "alias": "Tipo",
+              "useralias": "Tipo"
+            },
+            {
+              "name": "LOTCLINDER",
+              "alias": "TieneCertificacionLinderos",
+              "useralias": "Tiene Certificacion Linderos"
+            },
+            {
+              "name": "LOTMTOPOGR",
+              "alias": "ModificadoTopograficos",
+              "useralias": "Modificado Topograficos"
+            },
+            {
+              "name": "LOTTMEJORA",
+              "alias": "TieneMejora",
+              "useralias": "Tiene Mejora"
+            },{
+              "name": "LOTDISPERS",
+              "alias": "Disperso",
+              "useralias": "Disperso"
+            },{
+              "name": "LOTDISP_ID",
+              "alias": "Disperso_ID",
+              "useralias": "Disperso ID"
+            },
+            {
+              "name": "SHAPE.AREA",
+              "alias": "SHAPE.AREA",
+              "useralias": "Area"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Disperso",
+        "url": "http://gis.catastrobogota.gov.co/arcgis/rest/services/catastro1/MapServer",
+        "id": 6,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "LOTLOTE_ID",
+              "alias": "Lote_ID",
+              "useralias": "Lote Id"
+            },
+            {
+              "name": "LOTUNIDAPH",
+              "alias": "Unidad_PH",
+              "useralias": "Unidad PH"
+            },
+            {
+              "name": "LOTDISTRIT",
+              "alias": "Distrito",
+              "useralias": "Distrito"
+            },
+            {
+              "name": "LOTTIPO",
+              "alias": "Tipo",
+              "useralias": "Tipo"
+            },
+            {
+              "name": "LOTCLINDER",
+              "alias": "TieneCertificacionLinderos",
+              "useralias": "Tiene Certificacion Linderos"
+            },
+            {
+              "name": "LOTMTOPOGR",
+              "alias": "ModificadoTopograficos",
+              "useralias": "Modificado Topograficos"
+            },
+            {
+              "name": "LOTTMEJORA",
+              "alias": "TieneMejora",
+              "useralias": "Tiene Mejora"
+            },{
+              "name": "LOTDISPERS",
+              "alias": "Disperso",
+              "useralias": "Disperso"
+            },{
+              "name": "LOTDISP_ID",
+              "alias": "Disperso_ID",
+              "useralias": "Disperso ID"
+            },
+            {
+              "name": "SHAPE.AREA",
+              "alias": "SHAPE.AREA",
+              "useralias": "Area"
+            }
+          ]
+        }
+      }
+    ]
+}
