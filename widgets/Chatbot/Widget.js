@@ -126,18 +126,22 @@ define([
 
         // ✅ Consultar cantidad de registros
         if (text.toLowerCase().includes("cuántos") || text.toLowerCase().includes("cantidad")) {
-          let qt = new QueryTask(capa.url);
-          let q = new Query();
-          q.where = "1=1";
-          q.returnGeometry = false;
-          q.outFields = ["*"];
-          qt.execute(q, (res) => {
-            let total = res.features.length;
-            messages.innerHTML += `<div><b>SIGI:</b> La capa <b>${capa.title}</b> tiene <b>${total}</b> registros 📊</div>`;
-            messages.scrollTop = messages.scrollHeight;
-          });
-          return;
-        }
+            let qt = new QueryTask(capa.url);
+            let q = new Query();
+            q.where = "1=1";
+            q.returnCountOnly = true;  // ✅ Solo cuenta
+            qt.execute(q, (res) => {
+
+                let total = res.count;  // ✅ Aquí res ya es el número total
+                messages.innerHTML += `<div><b>SIGI:</b> La capa <b>${capa.title}</b> tiene <b>${total}</b> registros 📊</div>`;
+                messages.scrollTop = messages.scrollHeight;
+            }, (err) => {
+                console.error(err);
+                messages.innerHTML += `<div><b>SIGI:</b> Error al consultar la cantidad de registros ❌</div>`;
+            });
+            return;
+            }
+
 
         // ✅ Mostrar algunos registros
         if (text.toLowerCase().includes("muestra") && text.toLowerCase().includes("registros")) {
